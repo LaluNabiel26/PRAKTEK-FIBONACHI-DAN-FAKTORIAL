@@ -1,0 +1,28 @@
+print ("1 Fibonachi")
+print ("2 Faktorial")
+print (input("pilih 1 atau 2 :"))
+
+pilihan = ("1","2")
+if pilihan == "1":
+    #fibonachi
+    def fibonachi (n):
+        if n == (1) or n == (2):
+            return 1
+        else:
+            return (fibonachi(n-1) + fibonachi (n-2))
+    
+    a= int(input("masukkan nilai fibonachi :"))
+    hasil_fibonachi = fibonachi (a)
+    print(hasil_fibonachi)
+
+elif pilihan == "2":
+    #faktorial
+    def faktorial(n):
+        if n == 0 or n == 1:
+            return 1
+        else:
+            return n * faktorial(n - 1)
+
+    a= int(input("masukkan nilai faktorial :"))
+    hasil_faktorial = faktorial (a)
+    print(hasil_faktorial)
